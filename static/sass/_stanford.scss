@@ -29,6 +29,7 @@ $sandstone-25: lighten($sandstone, 20%); //Important Heading BG Color
 $gray: #3f3c30; //Main Text Color
 $gray-75: lighten($gray, 18.25%); //Lighter Text Color
 
+$gray-4: #c7c4bd;
 $gray-3: #e9e6df; //Block/Course BG Color
 $gray-2: #f2f1eb;
 $gray-1: #fbfbf9; //Main BG Color
@@ -97,6 +98,8 @@ $button-color: $cardinal-red;
 $button-archive-color: $gray-3;
 
 $shadow-color: $gray;
+
+$gray-l3: $gray-4;
 
 // actions
 $button-bg-image: none;
