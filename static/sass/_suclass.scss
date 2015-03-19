@@ -1,5 +1,5 @@
 /****************************************************************************************************
-*   Stanford Theming File
+*   SUclass Theming File
 *
 *   Contains all the theme color definitions for the Stanford Open Source MOOC Project
 *
@@ -189,12 +189,12 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/stanford/images/stanford-pano.jpg');
+$homepage-bg-image: url('../themes/suclass/images/stanford-pano.jpg');
 
 $login-banner-image: none;
 $register-banner-image: none;
 
-$video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
+$video-thumb-url: '../themes/suclass/images/stanford-online-video-thumb.png';
 
 //-----------------
 //  Mixin Styles
@@ -209,6 +209,10 @@ $video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
 @mixin footer_references_style {
     margin: 0 !important;
     text-align: right;
+}
+
+.wrapper-footer {
+    padding: 10px 10px 0 10px !important;
 }
 
 .view-register, .view-login, .view-passwordreset {
@@ -251,8 +255,57 @@ $video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
     }
 }
 
+.home>header {
+    .outer-wrapper {
+        width: 760px !important;
+    }
+    .title {
+        width: 550px;
+        margin-left: 0;
+    }
+    .media {
+        width: 210px;
+    }
+}
+
+.view-register, .view-login, .view-passwordreset {
+    .container, .introduction {
+        width: auto !important;
+        max-width: 1180px;
+        min-width: 760px;
+    }
+    .wrapper-footer footer {
+        width: auto !important;
+        max-width: 1180px;
+        min-width: 760px;
+    }
+    header.global nav {
+        width: auto !important;
+        max-width: 1180px;
+        min-width: 760px;
+    }
+}
+
 // Shib username page
 section.introduction h1.sr {
     min-height: 100px;
 }
 
+footer {
+    .colophon {
+        width: 80% !important;
+        
+        .footer-logo {
+            float: left;
+            margin-right: 35px;
+        }
+        
+        .nav-colophon li {
+            height: 35px;
+            margin-bottom: 20px;
+        }
+    }
+    .references {
+        width: 15% !important;
+    }
+}
