@@ -288,26 +288,21 @@ $video-thumb-url: '../themes/suclass/images/stanford-online-video-thumb.png';
 
 // Previous and Next arrow styling changes
 #course-content .sequence-bottom {
-    li {
-        width: 120px;
+    width: 220px;
 
-        a {
-            padding: 14px 10px;
-            text-indent: 0;
+    .sequence-nav-button {
+        width: 110px;
+        text-indent: 0;
+        padding: 6px 7px 8px 7px;
+
+        &.button-previous {
+            padding-left: 29px;
+            background-position-x: 15px;
         }
 
-        &.prev {
-            a {
-                padding-left: 40px;
-                background-position: 15px 15px !important;
-            }
-        }
-
-        &.next {
-            a {
-                padding-left: 30px;
-                background-position: 95px 15px !important;
-            }
+        &.button-next {
+            padding-right: 29px;
+            background-position-x: 85px;
         }
     }
 }
