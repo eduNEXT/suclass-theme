@@ -275,13 +275,15 @@ $video-thumb-url: '../themes/suclass/images/stanford-online-video-thumb.png';
 .home>header {
     .outer-wrapper {
         width: 760px !important;
+        padding: 175px 10px !important;
     }
     .title {
-        width: 550px;
-        margin-left: 0;
+        width: 550px !important;
+        margin-left: 0 !important;
     }
     .media {
-        width: 210px;
+        width: 225px !important;
+        height: 129px !important;
     }
 }
 
